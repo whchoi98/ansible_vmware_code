@@ -7,9 +7,9 @@
   tasks:
     - name: vCenter
       vmware_about_facts:
-        hostname: vcenter_hosts
-        username: administrator@vsphere.local
-        password: '!234Qwer'
+        hostname: {{vcenter_ip}}
+        username: {{vcenter_username}}
+        password: {{vcenter_password}}
         validate_certs: no
       delegate_to: localhost
       register: vcenter_about_info
