@@ -1,0 +1,13 @@
+[vcenter:vars]
+ansible_user=administrator@vsphere.local
+ansible_ssh_pass=!234Qwer
+
+[vcenter]
+vcenter43 ansible_python_interpreter=python
+
+#[DC1-ESX]
+#esx31
+#
+#[DC2-ESX]
+#
+#[DC2-HX]

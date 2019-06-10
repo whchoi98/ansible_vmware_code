@@ -1,0 +1,24 @@
+---
+- name: "vmware about facts"
+  hosts: all
+  connection: local
+  gather_facts: no
+  
+  tasks:
+    - name: vCenter
+      vmware_about_facts:
+        hostname: vcenter_hosts
+        username: administrator@vsphere.local
+        password: '!234Qwer'
+        validate_certs: no
+      delegate_to: localhost
+      register: vcenter_about_info
+
+    - name: Provide information about a standalone ESXi31 server
+      vmware_about_facts:
+        hostname: esx31
+        username: root
+        password: 1234Qwer
+        validate_certs: false
+      delegate_to: localhost
+      register: esxi_about_info

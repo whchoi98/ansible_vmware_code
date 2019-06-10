@@ -1,0 +1,37 @@
+---
+############################################################################
+# 작성자 : 최우형 (whchoi@cisco.com/whchoi98@gmail.com) , 작성일 : 2019년 5월 25일
+# vecenter43에 대한 환경변수 구성
+############################################################################
+# vcenter 대한 환경변수 구성
+############################################################################
+
+# vcenter vars 환경변수
+vcenter_ip: 10.72.86.43
+vcenter_username: administrator@vsphere.local
+vcenter_password: '!234Qwer'
+#vmware_datacentertacenter:
+#vmware_resource_pool:
+########################################
+
+# DC1-ESX 환경변수
+
+esxi_username: 'root'
+esxi_password: '1234Qwer'
+esx31_hostname: esx31
+esx32_hostname: esx32
+esx33_hostname: esx33
+esx34_hostname: esx34
+esx35_hostname: esx35
+esx36_hostname: esx36
+esx37_hostname: esx37
+esx38_hostname: esx38
+esx39_hostname: esx39
+#esx40_hostname: esx40
+#esx41_hostname: esx41
+esx113_hostname: esx113
+esx114_hostname: esx114
+esx115_hostname: esx115
+
+
+
